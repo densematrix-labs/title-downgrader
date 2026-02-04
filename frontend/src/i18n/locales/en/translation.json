@@ -10,11 +10,45 @@
   },
   "downgradeBtn": "Downgrade! ⬇️",
   "downgrading": "Downgrading...",
+  "buyToDowngrade": "Buy Credits to Downgrade",
   "original": "🔥 Original (Hyped)",
   "downgraded": "😐 Downgraded (Reality)",
   "hypeScore": "Hype Score",
   "copy": "Copy",
   "copied": "Copied!",
   "error": "Downgrade failed, please try again",
-  "footer": "Powered by AI — Fighting clickbait, one title at a time"
+  "needCredits": "Free trial used. Please purchase credits to continue.",
+  "footer": "Powered by AI — Fighting clickbait, one title at a time",
+  "creditsRemaining": "{{count}} credits remaining",
+  "freeTrialAvailable": "1 free downgrade available",
+  "noCredits": "No credits remaining",
+  "buyCredits": "Buy Credits",
+  "pricing": {
+    "title": "Get Downgrade Credits",
+    "subtitle": "Deflate clickbait back to reality",
+    "trialNote": "✨ Every device gets 1 free downgrade to try!",
+    "popular": "Popular",
+    "downgrades": "Downgrades",
+    "save": "Save",
+    "perDowngrade": "per downgrade",
+    "buyNow": "Buy Now",
+    "processing": "Processing...",
+    "error": "Payment error. Please try again.",
+    "backHome": "Back to Downgrader",
+    "features": {
+      "ai": "AI-powered title downgrading",
+      "intensities": "3 intensity levels: mild, normal, brutal",
+      "languages": "7 languages available",
+      "copy": "Copy & share results"
+    }
+  },
+  "success": {
+    "title": "Payment Successful!",
+    "subtitle": "Your credits have been added to your account.",
+    "loading": "Loading your tokens...",
+    "tokenLabel": "Your Token (save for future use)",
+    "tokenHint": "Use this token to restore credits on any device",
+    "startUsing": "Start Downgrading",
+    "buyMore": "Buy More Credits"
+  }
 }

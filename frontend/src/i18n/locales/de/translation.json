@@ -6,11 +6,45 @@
   "intensities": { "mild": "😊 Sanft", "normal": "😐 Normal", "brutal": "💀 Brutal" },
   "downgradeBtn": "Downgraden! ⬇️",
   "downgrading": "Downgrade läuft...",
+  "buyToDowngrade": "Credits kaufen zum Downgraden",
   "original": "🔥 Original (Übertrieben)",
   "downgraded": "😐 Herabgestuft (Realität)",
   "hypeScore": "Hype-Score",
   "copy": "Kopieren",
   "copied": "Kopiert!",
   "error": "Downgrade fehlgeschlagen",
-  "footer": "KI-gestützt — Kampf dem Clickbait"
+  "needCredits": "Kostenlose Testversion aufgebraucht. Bitte Credits kaufen.",
+  "footer": "KI-gestützt — Kampf dem Clickbait",
+  "creditsRemaining": "{{count}} Credits übrig",
+  "freeTrialAvailable": "1 kostenloses Downgrade verfügbar",
+  "noCredits": "Keine Credits übrig",
+  "buyCredits": "Credits kaufen",
+  "pricing": {
+    "title": "Downgrade-Credits kaufen",
+    "subtitle": "Clickbait zurück in die Realität",
+    "trialNote": "✨ Jedes Gerät bekommt 1 kostenloses Downgrade!",
+    "popular": "Beliebt",
+    "downgrades": "Downgrades",
+    "save": "Spare",
+    "perDowngrade": "pro Downgrade",
+    "buyNow": "Jetzt kaufen",
+    "processing": "Wird verarbeitet...",
+    "error": "Zahlungsfehler. Bitte erneut versuchen.",
+    "backHome": "Zurück zum Downgrader",
+    "features": {
+      "ai": "KI-gestütztes Titel-Downgrading",
+      "intensities": "3 Intensitätsstufen: Sanft, Normal, Brutal",
+      "languages": "7 Sprachen verfügbar",
+      "copy": "Ergebnisse kopieren & teilen"
+    }
+  },
+  "success": {
+    "title": "Zahlung erfolgreich!",
+    "subtitle": "Credits wurden Ihrem Konto hinzugefügt.",
+    "loading": "Token werden geladen...",
+    "tokenLabel": "Ihr Token (bitte aufbewahren)",
+    "tokenHint": "Mit diesem Token können Sie Credits auf jedem Gerät wiederherstellen",
+    "startUsing": "Downgrading starten",
+    "buyMore": "Mehr Credits kaufen"
+  }
 }

@@ -6,11 +6,45 @@
   "intensities": { "mild": "😊 Suave", "normal": "😐 Normal", "brutal": "💀 Brutal" },
   "downgradeBtn": "¡Degradar! ⬇️",
   "downgrading": "Degradando...",
+  "buyToDowngrade": "Comprar créditos para degradar",
   "original": "🔥 Original (Exagerado)",
   "downgraded": "😐 Degradado (Realidad)",
   "hypeScore": "Puntuación de exageración",
   "copy": "Copiar",
   "copied": "¡Copiado!",
   "error": "Error al degradar",
-  "footer": "Impulsado por IA — Contra el clickbait"
+  "needCredits": "Prueba gratuita agotada. Compra créditos para continuar.",
+  "footer": "Impulsado por IA — Contra el clickbait",
+  "creditsRemaining": "{{count}} créditos restantes",
+  "freeTrialAvailable": "1 degradación gratuita disponible",
+  "noCredits": "Sin créditos",
+  "buyCredits": "Comprar créditos",
+  "pricing": {
+    "title": "Comprar créditos de degradación",
+    "subtitle": "Devolviendo el clickbait a la realidad",
+    "trialNote": "✨ ¡Cada dispositivo obtiene 1 degradación gratuita!",
+    "popular": "Popular",
+    "downgrades": "Degradaciones",
+    "save": "Ahorra",
+    "perDowngrade": "por degradación",
+    "buyNow": "Comprar ahora",
+    "processing": "Procesando...",
+    "error": "Error de pago. Inténtalo de nuevo.",
+    "backHome": "Volver al degradador",
+    "features": {
+      "ai": "Degradación de títulos con IA",
+      "intensities": "3 niveles de intensidad: suave, normal, brutal",
+      "languages": "7 idiomas disponibles",
+      "copy": "Copiar y compartir resultados"
+    }
+  },
+  "success": {
+    "title": "¡Pago exitoso!",
+    "subtitle": "Los créditos se han añadido a tu cuenta.",
+    "loading": "Cargando tus tokens...",
+    "tokenLabel": "Tu token (guárdalo)",
+    "tokenHint": "Usa este token para restaurar créditos en cualquier dispositivo",
+    "startUsing": "Empezar a degradar",
+    "buyMore": "Comprar más créditos"
+  }
 }

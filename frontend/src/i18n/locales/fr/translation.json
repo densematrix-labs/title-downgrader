@@ -6,11 +6,45 @@
   "intensities": { "mild": "😊 Doux", "normal": "😐 Normal", "brutal": "💀 Brutal" },
   "downgradeBtn": "Déclasser ! ⬇️",
   "downgrading": "Déclassement...",
+  "buyToDowngrade": "Acheter des crédits pour déclasser",
   "original": "🔥 Original (Exagéré)",
   "downgraded": "😐 Déclassé (Réalité)",
   "hypeScore": "Score d'exagération",
   "copy": "Copier",
   "copied": "Copié !",
   "error": "Échec du déclassement",
-  "footer": "Propulsé par IA — Contre le clickbait"
+  "needCredits": "Essai gratuit terminé. Veuillez acheter des crédits.",
+  "footer": "Propulsé par IA — Contre le clickbait",
+  "creditsRemaining": "{{count}} crédits restants",
+  "freeTrialAvailable": "1 déclassement gratuit disponible",
+  "noCredits": "Plus de crédits",
+  "buyCredits": "Acheter des crédits",
+  "pricing": {
+    "title": "Acheter des crédits",
+    "subtitle": "Ramener le clickbait à la réalité",
+    "trialNote": "✨ Chaque appareil bénéficie d'1 déclassement gratuit !",
+    "popular": "Populaire",
+    "downgrades": "Déclassements",
+    "save": "Économisez",
+    "perDowngrade": "par déclassement",
+    "buyNow": "Acheter maintenant",
+    "processing": "Traitement...",
+    "error": "Erreur de paiement. Veuillez réessayer.",
+    "backHome": "Retour au déclasseur",
+    "features": {
+      "ai": "Déclassement de titres par IA",
+      "intensities": "3 niveaux d'intensité : doux, normal, brutal",
+      "languages": "7 langues disponibles",
+      "copy": "Copier et partager les résultats"
+    }
+  },
+  "success": {
+    "title": "Paiement réussi !",
+    "subtitle": "Vos crédits ont été ajoutés à votre compte.",
+    "loading": "Chargement de vos jetons...",
+    "tokenLabel": "Votre jeton (à conserver)",
+    "tokenHint": "Utilisez ce jeton pour restaurer vos crédits sur n'importe quel appareil",
+    "startUsing": "Commencer à déclasser",
+    "buyMore": "Acheter plus de crédits"
+  }
 }

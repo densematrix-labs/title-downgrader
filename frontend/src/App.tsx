@@ -1,5 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { useTokenStore } from './stores/tokenStore';
+import { getDeviceId } from './lib/fingerprint';
+import { getTrialStatus, downgradeTitle } from './services/api';
 import './App.css';
 
 const LANGUAGES = [
@@ -41,28 +45,75 @@ function App() {
   const [result, setResult] = useState<DowngradeResult | null>(null);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [deviceId, setDeviceId] = useState<string | null>(null);
+  const [hasFreeTrial, setHasFreeTrial] = useState<boolean | null>(null);
+
+  const { getActiveToken, getTotalGenerations, updateTokenUsage } = useTokenStore();
+  const activeToken = getActiveToken();
+  const totalCredits = getTotalGenerations();
+
+  // Initialize device ID and check trial status
+  useEffect(() => {
+    async function init() {
+      const id = await getDeviceId();
+      setDeviceId(id);
+      try {
+        const status = await getTrialStatus(id);
+        setHasFreeTrial(status.has_free_trial);
+      } catch {
+        // If API fails, assume trial available
+        setHasFreeTrial(true);
+      }
+    }
+    init();
+  }, []);
+
+  const canDowngrade = hasFreeTrial || totalCredits > 0;
 
   const handleDowngrade = async () => {
-    if (!title.trim()) return;
+    if (!title.trim() || !deviceId) return;
     setLoading(true);
     setError('');
     setResult(null);
 
     try {
-      const res = await fetch('/api/downgrade', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          title: title.trim(),
-          intensity,
-          language: i18n.language,
-        }),
-      });
+      const payload: {
+        title: string;
+        intensity: string;
+        language: string;
+        device_id?: string;
+        token?: string;
+      } = {
+        title: title.trim(),
+        intensity,
+        language: i18n.language,
+      };
 
-      if (!res.ok) throw new Error('Failed');
-      setResult(await res.json());
-    } catch {
-      setError(t('error'));
+      // Use paid token if available, otherwise fall back to free trial
+      if (activeToken) {
+        payload.token = activeToken.token;
+      } else {
+        payload.device_id = deviceId;
+      }
+
+      const data = await downgradeTitle(payload);
+      setResult(data);
+
+      // Update local token state after successful use
+      if (activeToken) {
+        updateTokenUsage(activeToken.token, activeToken.remaining_generations - 1);
+      } else {
+        // Free trial used, update status
+        setHasFreeTrial(false);
+      }
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : t('error');
+      if (message.includes('402') || message.includes('trial') || message.includes('Token')) {
+        setError(t('needCredits'));
+        setHasFreeTrial(false);
+      } else {
+        setError(t('error'));
+      }
     } finally {
       setLoading(false);
     }
@@ -92,6 +143,26 @@ function App() {
         </div>
         <h1>{t('title')}</h1>
         <p className="subtitle">{t('subtitle')}</p>
+
+        {/* Credits indicator + pricing link */}
+        <div className="credits-bar">
+          {totalCredits > 0 ? (
+            <span className="credits-count">
+              {t('creditsRemaining', { count: totalCredits })}
+            </span>
+          ) : hasFreeTrial ? (
+            <span className="credits-count free-trial">
+              {t('freeTrialAvailable')}
+            </span>
+          ) : (
+            <span className="credits-count no-credits">
+              {t('noCredits')}
+            </span>
+          )}
+          <Link to="/pricing" className="pricing-link">
+            {t('buyCredits')}
+          </Link>
+        </div>
       </header>
 
       <main>
@@ -123,9 +194,9 @@ function App() {
             <button
               className="downgrade-btn"
               onClick={handleDowngrade}
-              disabled={loading || !title.trim()}
+              disabled={loading || !title.trim() || !canDowngrade}
             >
-              {loading ? t('downgrading') : t('downgradeBtn')}
+              {loading ? t('downgrading') : !canDowngrade ? t('buyToDowngrade') : t('downgradeBtn')}
             </button>
           </div>
         </div>

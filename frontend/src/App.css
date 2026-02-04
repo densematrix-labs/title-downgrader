@@ -44,5 +44,11 @@ textarea:focus { outline: none; border-color: #f5576c; }
 .result-text { line-height: 1.7; font-size: 1.1rem; }
 .copy-btn { position: absolute; top: 1rem; right: 1rem; padding: 0.3rem 0.8rem; background: #f0f0f0; border: none; border-radius: 8px; cursor: pointer; font-size: 0.8rem; }
 .copy-btn:hover { background: #e0e0e0; }
+.credits-bar { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem; }
+.credits-count { background: rgba(255,255,255,0.2); color: white; padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; font-weight: 500; }
+.credits-count.free-trial { background: rgba(76,175,80,0.3); }
+.credits-count.no-credits { background: rgba(255,82,82,0.3); }
+.pricing-link { color: white; background: rgba(255,255,255,0.2); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+.pricing-link:hover { background: rgba(255,255,255,0.35); }
 footer { text-align: center; margin-top: 2rem; color: rgba(255,255,255,0.6); font-size: 0.85rem; }
 @media (max-width: 768px) { h1 { font-size: 1.8rem; } }

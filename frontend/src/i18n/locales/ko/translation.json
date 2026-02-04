@@ -6,11 +6,45 @@
   "intensities": { "mild": "😊 부드럽게", "normal": "😐 보통", "brutal": "💀 무자비" },
   "downgradeBtn": "다운그레이드! ⬇️",
   "downgrading": "다운그레이드 중...",
+  "buyToDowngrade": "크레딧을 구매하여 다운그레이드",
   "original": "🔥 원본 (과장 버전)",
   "downgraded": "😐 다운그레이드 (현실 버전)",
   "hypeScore": "과장 점수",
   "copy": "복사",
   "copied": "복사됨!",
   "error": "다운그레이드 실패",
-  "footer": "AI 기반 — 클릭베이트와의 전쟁"
+  "needCredits": "무료 체험이 끝났습니다. 크레딧을 구매해주세요.",
+  "footer": "AI 기반 — 클릭베이트와의 전쟁",
+  "creditsRemaining": "{{count}} 크레딧 남음",
+  "freeTrialAvailable": "1회 무료 다운그레이드 가능",
+  "noCredits": "크레딧 없음",
+  "buyCredits": "크레딧 구매",
+  "pricing": {
+    "title": "다운그레이드 크레딧 구매",
+    "subtitle": "클릭베이트를 현실로 되돌리다",
+    "trialNote": "✨ 모든 기기에서 1회 무료 체험!",
+    "popular": "인기",
+    "downgrades": "회 다운그레이드",
+    "save": "절약",
+    "perDowngrade": "/ 회",
+    "buyNow": "지금 구매",
+    "processing": "처리 중...",
+    "error": "결제 오류. 다시 시도해주세요.",
+    "backHome": "다운그레이더로 돌아가기",
+    "features": {
+      "ai": "AI 기반 제목 다운그레이드",
+      "intensities": "3단계 강도: 부드럽게, 보통, 무자비",
+      "languages": "7개 언어 지원",
+      "copy": "결과 복사 및 공유"
+    }
+  },
+  "success": {
+    "title": "결제 성공!",
+    "subtitle": "크레딧이 계정에 추가되었습니다.",
+    "loading": "토큰 로딩 중...",
+    "tokenLabel": "토큰 (보관해주세요)",
+    "tokenHint": "이 토큰으로 다른 기기에서도 크레딧을 복원할 수 있습니다",
+    "startUsing": "다운그레이드 시작",
+    "buyMore": "더 많은 크레딧 구매"
+  }
 }

@@ -6,11 +6,45 @@
   "intensities": { "mild": "😊 穏やか", "normal": "😐 普通", "brutal": "💀 容赦なし" },
   "downgradeBtn": "ダウングレード！⬇️",
   "downgrading": "ダウングレード中...",
+  "buyToDowngrade": "クレジットを購入してダウングレード",
   "original": "🔥 オリジナル（誇張版）",
   "downgraded": "😐 ダウングレード後（現実版）",
   "hypeScore": "誇張スコア",
   "copy": "コピー",
   "copied": "コピーしました！",
   "error": "ダウングレードに失敗しました",
-  "footer": "AI搭載 — クリックベイトと戦う"
+  "needCredits": "無料トライアルは終了しました。クレジットを購入してください。",
+  "footer": "AI搭載 — クリックベイトと戦う",
+  "creditsRemaining": "残り{{count}}クレジット",
+  "freeTrialAvailable": "1回無料ダウングレード可能",
+  "noCredits": "クレジットなし",
+  "buyCredits": "クレジット購入",
+  "pricing": {
+    "title": "ダウングレードクレジット購入",
+    "subtitle": "クリックベイトを現実に引き戻す",
+    "trialNote": "✨ 各デバイスで1回無料お試し！",
+    "popular": "人気",
+    "downgrades": "回ダウングレード",
+    "save": "節約",
+    "perDowngrade": "/ 回",
+    "buyNow": "今すぐ購入",
+    "processing": "処理中...",
+    "error": "支払いエラー。もう一度お試しください。",
+    "backHome": "ダウングレーダーに戻る",
+    "features": {
+      "ai": "AI搭載タイトルダウングレード",
+      "intensities": "3段階の強度：穏やか、普通、容赦なし",
+      "languages": "7言語対応",
+      "copy": "コピー＆シェア"
+    }
+  },
+  "success": {
+    "title": "支払い完了！",
+    "subtitle": "クレジットがアカウントに追加されました。",
+    "loading": "トークンを読み込み中...",
+    "tokenLabel": "トークン（保存してください）",
+    "tokenHint": "このトークンで他のデバイスでもクレジットを復元できます",
+    "startUsing": "ダウングレード開始",
+    "buyMore": "もっと購入"
+  }
 }
