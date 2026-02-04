@@ -1,0 +1,16 @@
+{
+  "title": "AI Titel-Downgrader",
+  "subtitle": "Clickbait zurück in die Realität holen",
+  "titlePlaceholder": "Übertriebenen Titel oder Marketing-Text einfügen...",
+  "intensityLabel": "Downgrade-Intensität",
+  "intensities": { "mild": "😊 Sanft", "normal": "😐 Normal", "brutal": "💀 Brutal" },
+  "downgradeBtn": "Downgraden! ⬇️",
+  "downgrading": "Downgrade läuft...",
+  "original": "🔥 Original (Übertrieben)",
+  "downgraded": "😐 Herabgestuft (Realität)",
+  "hypeScore": "Hype-Score",
+  "copy": "Kopieren",
+  "copied": "Kopiert!",
+  "error": "Downgrade fehlgeschlagen",
+  "footer": "KI-gestützt — Kampf dem Clickbait"
+}

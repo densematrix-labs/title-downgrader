@@ -1,0 +1,16 @@
+{
+  "title": "AI タイトルダウングレーダー",
+  "subtitle": "クリックベイトを現実に引き戻す",
+  "titlePlaceholder": "大げさなタイトルやマーケティングコピーを貼り付け...",
+  "intensityLabel": "ダウングレード強度",
+  "intensities": { "mild": "😊 穏やか", "normal": "😐 普通", "brutal": "💀 容赦なし" },
+  "downgradeBtn": "ダウングレード！⬇️",
+  "downgrading": "ダウングレード中...",
+  "original": "🔥 オリジナル（誇張版）",
+  "downgraded": "😐 ダウングレード後（現実版）",
+  "hypeScore": "誇張スコア",
+  "copy": "コピー",
+  "copied": "コピーしました！",
+  "error": "ダウングレードに失敗しました",
+  "footer": "AI搭載 — クリックベイトと戦う"
+}

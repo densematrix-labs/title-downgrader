@@ -1,0 +1,16 @@
+{
+  "title": "AI Déclasseur de Titres",
+  "subtitle": "Ramener le clickbait à la réalité",
+  "titlePlaceholder": "Collez un titre exagéré ou un texte marketing...",
+  "intensityLabel": "Intensité du déclassement",
+  "intensities": { "mild": "😊 Doux", "normal": "😐 Normal", "brutal": "💀 Brutal" },
+  "downgradeBtn": "Déclasser ! ⬇️",
+  "downgrading": "Déclassement...",
+  "original": "🔥 Original (Exagéré)",
+  "downgraded": "😐 Déclassé (Réalité)",
+  "hypeScore": "Score d'exagération",
+  "copy": "Copier",
+  "copied": "Copié !",
+  "error": "Échec du déclassement",
+  "footer": "Propulsé par IA — Contre le clickbait"
+}

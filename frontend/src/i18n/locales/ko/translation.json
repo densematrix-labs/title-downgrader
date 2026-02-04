@@ -1,0 +1,16 @@
+{
+  "title": "AI 제목 다운그레이더",
+  "subtitle": "클릭베이트를 현실로 되돌리다",
+  "titlePlaceholder": "과장된 제목이나 마케팅 카피를 붙여넣기...",
+  "intensityLabel": "다운그레이드 강도",
+  "intensities": { "mild": "😊 부드럽게", "normal": "😐 보통", "brutal": "💀 무자비" },
+  "downgradeBtn": "다운그레이드! ⬇️",
+  "downgrading": "다운그레이드 중...",
+  "original": "🔥 원본 (과장 버전)",
+  "downgraded": "😐 다운그레이드 (현실 버전)",
+  "hypeScore": "과장 점수",
+  "copy": "복사",
+  "copied": "복사됨!",
+  "error": "다운그레이드 실패",
+  "footer": "AI 기반 — 클릭베이트와의 전쟁"
+}

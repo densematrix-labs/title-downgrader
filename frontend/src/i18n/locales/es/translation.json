@@ -1,0 +1,16 @@
+{
+  "title": "AI Degradador de Títulos",
+  "subtitle": "Devolviendo el clickbait a la realidad",
+  "titlePlaceholder": "Pega un título exagerado o texto de marketing...",
+  "intensityLabel": "Intensidad de degradación",
+  "intensities": { "mild": "😊 Suave", "normal": "😐 Normal", "brutal": "💀 Brutal" },
+  "downgradeBtn": "¡Degradar! ⬇️",
+  "downgrading": "Degradando...",
+  "original": "🔥 Original (Exagerado)",
+  "downgraded": "😐 Degradado (Realidad)",
+  "hypeScore": "Puntuación de exageración",
+  "copy": "Copiar",
+  "copied": "¡Copiado!",
+  "error": "Error al degradar",
+  "footer": "Impulsado por IA — Contra el clickbait"
+}
