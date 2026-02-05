@@ -1,30 +1,69 @@
 {
-  "tool": "AI Title Downgrader",
   "tool_url": "https://title-downgrader.demo.densematrix.ai",
-  "dimensions": [
-    {
-      "name": "category",
-      "name_zh": "内容类别",
-      "values_en": ["news", "tech", "entertainment", "health", "finance", "sports", "politics", "science", "lifestyle", "business"],
-      "values_zh": ["新闻", "科技", "娱乐", "健康", "财经", "体育", "政治", "科学", "生活", "商业"]
+  "dimensions": {
+    "original_title": {
+      "values": [
+        {"id": "ceo", "en": "CEO"},
+        {"id": "cto", "en": "CTO"},
+        {"id": "cfo", "en": "CFO"},
+        {"id": "coo", "en": "COO"},
+        {"id": "vp", "en": "VP"},
+        {"id": "director", "en": "Director"},
+        {"id": "senior-engineer", "en": "Senior Engineer"},
+        {"id": "lead", "en": "Team Lead"},
+        {"id": "manager", "en": "Manager"},
+        {"id": "principal", "en": "Principal"},
+        {"id": "staff", "en": "Staff Engineer"},
+        {"id": "architect", "en": "Architect"},
+        {"id": "founder", "en": "Founder"},
+        {"id": "partner", "en": "Partner"},
+        {"id": "consultant", "en": "Consultant"},
+        {"id": "professor", "en": "Professor"},
+        {"id": "phd", "en": "PhD"},
+        {"id": "doctor", "en": "Doctor"},
+        {"id": "lawyer", "en": "Lawyer"},
+        {"id": "analyst", "en": "Analyst"}
+      ]
     },
-    {
-      "name": "platform",
-      "name_zh": "平台",
-      "values_en": ["youtube", "twitter", "facebook", "linkedin", "medium", "reddit", "tiktok", "instagram"],
-      "values_zh": ["YouTube", "推特", "脸书", "领英", "Medium", "Reddit", "TikTok", "Instagram"]
+    "industry": {
+      "values": [
+        {"id": "tech", "en": "Tech"},
+        {"id": "finance", "en": "Finance"},
+        {"id": "consulting", "en": "Consulting"},
+        {"id": "healthcare", "en": "Healthcare"},
+        {"id": "legal", "en": "Legal"},
+        {"id": "academia", "en": "Academia"},
+        {"id": "startup", "en": "Startup"},
+        {"id": "faang", "en": "FAANG"},
+        {"id": "government", "en": "Government"},
+        {"id": "nonprofit", "en": "Non-Profit"},
+        {"id": "media", "en": "Media"},
+        {"id": "retail", "en": "Retail"}
+      ]
     },
-    {
-      "name": "style",
-      "name_zh": "标题风格",
-      "values_en": ["clickbait", "sensational", "misleading", "hyperbolic", "fearmongering", "outrage-bait"],
-      "values_zh": ["标题党", "耸人听闻", "误导性", "夸张", "恐慌营销", "愤怒诱饵"]
+    "downgrade_level": {
+      "values": [
+        {"id": "mild", "en": "Mild"},
+        {"id": "moderate", "en": "Moderate"},
+        {"id": "savage", "en": "Savage"},
+        {"id": "brutal", "en": "Brutal"},
+        {"id": "existential", "en": "Existential Crisis"},
+        {"id": "realistic", "en": "Painfully Realistic"},
+        {"id": "linkedin", "en": "LinkedIn Accurate"},
+        {"id": "resume", "en": "Resume Truth"}
+      ]
+    },
+    "style": {
+      "values": [
+        {"id": "corporate", "en": "Corporate Speak"},
+        {"id": "honest", "en": "Brutally Honest"},
+        {"id": "sarcastic", "en": "Sarcastic"},
+        {"id": "gen-z", "en": "Gen-Z"},
+        {"id": "boomer", "en": "Boomer"},
+        {"id": "millennial", "en": "Millennial"},
+        {"id": "twitter", "en": "Twitter Style"},
+        {"id": "formal", "en": "Formal"}
+      ]
     }
-  ],
-  "combinations": [
-    ["category", "platform"],
-    ["category", "style"],
-    ["platform", "style"]
-  ],
-  "estimated_pages": 188
+  }
 }
