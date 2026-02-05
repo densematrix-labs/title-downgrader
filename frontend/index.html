@@ -51,12 +51,18 @@
     </script>
     
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <!-- Google Analytics 4 (DenseMatrix 共用 Property) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4ZLGKH1E1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-P4ZLGKH1E1', {
+        'custom_map': {'dimension1': 'tool_name'}
+      });
+      gtag('event', 'page_view', {
+        'tool_name': 'title-downgrader'
+      });
     </script>
   </head>
   <body>
