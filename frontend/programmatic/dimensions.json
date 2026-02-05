@@ -1,0 +1,30 @@
+{
+  "tool": "AI Title Downgrader",
+  "tool_url": "https://title-downgrader.demo.densematrix.ai",
+  "dimensions": [
+    {
+      "name": "category",
+      "name_zh": "内容类别",
+      "values_en": ["news", "tech", "entertainment", "health", "finance", "sports", "politics", "science", "lifestyle", "business"],
+      "values_zh": ["新闻", "科技", "娱乐", "健康", "财经", "体育", "政治", "科学", "生活", "商业"]
+    },
+    {
+      "name": "platform",
+      "name_zh": "平台",
+      "values_en": ["youtube", "twitter", "facebook", "linkedin", "medium", "reddit", "tiktok", "instagram"],
+      "values_zh": ["YouTube", "推特", "脸书", "领英", "Medium", "Reddit", "TikTok", "Instagram"]
+    },
+    {
+      "name": "style",
+      "name_zh": "标题风格",
+      "values_en": ["clickbait", "sensational", "misleading", "hyperbolic", "fearmongering", "outrage-bait"],
+      "values_zh": ["标题党", "耸人听闻", "误导性", "夸张", "恐慌营销", "愤怒诱饵"]
+    }
+  ],
+  "combinations": [
+    ["category", "platform"],
+    ["category", "style"],
+    ["platform", "style"]
+  ],
+  "estimated_pages": 188
+}

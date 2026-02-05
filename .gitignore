@@ -5,3 +5,7 @@ __pycache__/
 *.pyc
 .coverage
 *.egg-info/
+
+# Programmatic SEO (generated at build time)
+frontend/public/p/
+frontend/public/sitemap-programmatic.xml
